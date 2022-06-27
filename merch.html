@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/4f57ab1524.js" crossorigin="anonymous"></script>
+  <title> Tom Misch </title>
+</head>
+
+<body>
+  <header id="top">
+    <h1> Tom Misch </h1>
+    <nav>
+      <!-- Lista de menu con links -->
+      <ul class="menu">
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html"> Home </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./discografia.html"> Discografía </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./tour.html"> Tour </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./merch.html"> Merch </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./contacto.html"> Contacto </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-general">
+    <section class="tienda">
+      <form class="formu-tienda" action="forms.html" method="post" enctype="application/x-www-form-urlencoded">
+        <ul class="articulos">
+          <li class="articulo">
+            <img src="./assets/img/remera.webp" alt="remera" width="180" height="200">
+            <div> Remera "Real Good Shit"</div>
+            <div> <strong> $5000 </strong> </div>
+            <div>
+              <label for="talle">Talle</label>
+              <select name="talle">
+                <option value="0" selected>Seleccione</option>
+                <option value="XL">Extra Large</option>
+                <option value="L">Large</option>
+                <option value="M">Medium</option>
+                <option value="S">Small</option>
+              </select>
+            </div>
+            <div>
+              <label for="unidades"> Unidades </label>
+              <select name="unidades">
+                <option value="0" selected>Seleccione</option>
+                <option value="4"> 4 </option>
+                <option value="3"> 3 </option>
+                <option value="2"> 2 </option>
+                <option value="1"> 1 </option>
+              </select>
+            </div>
+
+          </li>
+          <li class="articulo">
+            <img src="./assets/img/piluso.jpeg" alt="piluso" width="180" height="200">
+            <div> Piluso "Real Good Shit" </div>
+            <div> <strong> $3000 </strong> </div>
+            <div>
+              <label for="talle">Talle</label>
+              <select name="talle">
+                <option value="0" selected>Seleccione</option>
+                <option value="XL">Extra Large</option>
+                <option value="L">Large</option>
+                <option value="M">Medium</option>
+                <option value="S">Small</option>
+              </select>
+            </div>
+            <div>
+              <label for="unidades"> Unidades </label>
+              <select name="unidades">
+                <option value="0" selected>Seleccione</option>
+                <option value="4"> 4 </option>
+                <option value="3"> 3 </option>
+                <option value="2"> 2 </option>
+                <option value="1"> 1 </option>
+              </select>
+            </div>
+
+          </li>
+          <li class="articulo">
+            <img src="./assets/img/Vinilo1.png" alt="vinilo" width="400" height="210">
+            <div> Vinilo "Quarentine Sessions" </div>
+            <div> <strong> $8000 </strong> </div>
+            <div>
+              <label for="unidades"> Unidades </label>
+              <select name="unidades">
+                <option value="0" selected>Seleccione</option>
+                <option value="4"> 4 </option>
+                <option value="3"> 3 </option>
+                <option value="2"> 2 </option>
+                <option value="1"> 1 </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+        <div>
+          <input type="submit" value="Comprar" />
+          <input type="reset" value="Vaciar Carrito" />
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <span> <a class="redes" href="https://instagram.com/tommisch?igshid=YmMyMTA2M2Y=" target="_blank"> <i
+          class="fa fa-instagram" style="color: #f3ebd8; font-size: 30px;"> </i></a> </span>
+    <span> <a class="redes" href="https://twitter.com/TomMisch" target="_blank"> <i class="fa fa-twitter"
+          style="color:#f3ebd8; font-size: 30px;"> </i> </a> </span>
+    <span> <a class="redes" href="https://www.facebook.com/TomMisch" target="_blank"> <i class="fa fa-facebook"
+          style="color:#f3ebd8; font-size: 30px;"> </i> </a> </span>
+    <span> <a class="redes" href="   https://open.spotify.com/artist/1uiEZYehlNivdK3iQyAbye?si=iruMuz21SCCIgHs70yXj9A"
+        target="_blank">
+        <i class="fa fa-spotify" style="color: #f3ebd8; font-size: 30px;"> </i> </a> </span>
+    <span> <a class="redes" href="https://www.youtube.com/channel/UCKXs11Oj1codrEy33D6XgkQ" target="_blank"> <i
+          class="fa fa-youtube" style="color:#f3ebd8; font-size: 30px;"> </i> </a> </span>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/4f57ab1524.js" crossorigin="anonymous"></script>
+  <title> Tom Misch </title>
+</head>
+
+<body>
+  <header id="top">
+    <h1> Tom Misch </h1>
+    <nav>
+      <!-- Lista de menu con links -->
+      <ul class="menu">
+        <li class="menu_item">
+          <a class="menu_link" href="./index.html"> Home </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./discografia.html"> Discografía </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./tour.html"> Tour </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./merch.html"> Merch </a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_link" href="./contacto.html"> Contacto </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-general">
+    <section>
+      <form class="formulario" action="forms.html" method="post" enctype="application/x-www-form-urlencoded">
+        <div class="campo">
+          <span>
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" />
+          </span>
+          <span>
+            <label for="apellido"> Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" />
+          </span>
+        </div>
+        <div class="campo">
+          <label for="E-mail"> E-mail: </label>
+          <input type="text" name="E-mail" id="E-mail" placeholder="Ingresa tu E-mail" />
+        </div>
+        <div class="campo">
+          <label for="Fecha"> Fecha de Nacimiento: </label> </div>
+        <input type="date" id="Fecha" name="Fecha de Nacimiento" value="2022-01-01" min="1930-01-01" max="2022-05-25">
+        </div>
+        <div class="campo">
+          <label for="Suscribirse"> Suscribirse al Newsletter </label> <br />
+          <input type="radio" name="Suscribirse" id="Si" value="Si" />
+          <label for="Si"> Si </label><br>
+          <input type="radio" name="Suscribirse" id="No" value="No" />
+          <label for="No">No</label><br>
+        </div>
+        <div class="campo">
+          <label for="comentarios">Comentarios</label><br />
+          <textarea name="comentarios" id="comentarios" rows="5" maxlength="300" cols="40"></textarea>
+        </div>
+        <div class="campo">
+          <input type="submit" value="Enviar formulario" />
+          <input type="reset" value="Limpiar formulario" />
+        </div>
+      </form>
+  </main>
+  <footer>
+    <span> <a class="redes" href="https://instagram.com/tommisch?igshid=YmMyMTA2M2Y=" target="_blank"> <i
+          class="fa fa-instagram" style="color: #f3ebd8; font-size: 30px;"> </i></a> </span>
+    <span> <a class="redes" href="https://twitter.com/TomMisch" target="_blank"> <i class="fa fa-twitter"
+          style="color:#f3ebd8; font-size: 30px;"> </i> </a> </span>
+    <span> <a class="redes" href="https://www.facebook.com/TomMisch" target="_blank"> <i class="fa fa-facebook"
+          style="color:#f3ebd8; font-size: 30px;"> </i> </a> </span>
+    <span> <a class="redes" href="   https://open.spotify.com/artist/1uiEZYehlNivdK3iQyAbye?si=iruMuz21SCCIgHs70yXj9A"
+        target="_blank">
+        <i class="fa fa-spotify" style="color: #f3ebd8; font-size: 30px;"> </i> </a> </span>
+    <span> <a class="redes" href="https://www.youtube.com/channel/UCKXs11Oj1codrEy33D6XgkQ" target="_blank"> <i
+          class="fa fa-youtube" style="color:#f3ebd8; font-size: 30px;"> </i> </a> </span>
+  </footer>
+</body>
+
+</html>
