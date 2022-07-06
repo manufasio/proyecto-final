@@ -5,123 +5,124 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://kit.fontawesome.com/4f57ab1524.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
   <title> Tom Misch </title>
 </head>
 
 <body>
-  <header id="top">
+  <header>
     <h1> Tom Misch </h1>
-    <nav>
-      <!-- Lista de menu con links -->
-      <ul class="menu">
-        <li class="menu_item">
-          <a class="menu_link" href="./index.html"> Home </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./discografia.html"> Discografía </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./tour.html"> Tour </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./merch.html"> Merch </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./contacto.html"> Contacto </a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show justify-content-evenly" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" style="color: #e6ba46; padding-inline-start: 5vh" aria-current="page"
+              href="index.html">Home</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh;"
+              href="discografia.html">Discografía</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="tour.html">Tour</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="merch.html">Merch</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
-  <main class="main-general">
-    <section class="main-section">
-      <table>
 
-        <tr>
-          <td>
-            <div> 09 de Junio, 2022 </div>
-            <div> Ferropolis </div>
-            <div> Gräfenhainichen, Alemania </div>
-          </td>
-          <td>
-            <span>
-              <a class="boton"
-                href="https://www.songkick.com/festivals/1556-melt/id/40182516-melt-festival-2022?utm_source=53762&utm_medium=partner"
-                target="_blank">
-                Tickets
-              </a>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div> 10 de Junio, 2022 </div>
-            <div> Kirtlington Park </div>
-            <div> Kidlington, Reino Unido </div>
-          </td>
-          <td>
-            <span>
-              <a class="boton"
-                href="https://www.songkick.com/festivals/2925624-kite/id/40139178-kite-festival-2022?utm_source=53762&utm_medium=partner"
-                target="_blank">
-                Tickets
-              </a>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div> 11 de Junio, 2022 </div>
-            <div> Heaton Park </div>
-            <div> Manchester, Reino Unido </div>
-          </td>
-          <td>
-            <span>
-              <a class="boton"
-                href="https://www.songkick.com/festivals/346-parklife/id/40196308-parklife-festival-2022?utm_source=53762&utm_medium=partner"
-                target="_blank">
-                Tickets
-              </a>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div> 01 de Julio, 2022 </div>
-            <div> Glynde Place </div>
-            <div> Lewes, Reino Unido</div>
-          </td>
-          <td>
-            <span>
-              <a class="boton"
-                href="https://www.songkick.com/festivals/651779-love-supreme/id/40127484-love-supreme-festival-2022?utm_source=53762&utm_medium=partner"
-                target="_blank">
-                Tickets
-              </a>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div> 06 de Julio, 2022 </div>
-            <div> IFEMA Feria de Madrid </div>
-            <div> Madrid, España </div>
-          </td>
-          <td>
-            <span>
-              <a class="boton"
-                href="https://www.songkick.com/festivals/1481913-mad-cool/id/39887117-mad-cool-festival-2022?utm_source=53762&utm_medium=partner"
-                target="_blank">
-                Tickets
-              </a>
-            </span>
-          </td>
-        </tr>
-      </table>
-    </section>
+  <main class="main-general">
+    <div class="container-fluid col-12 pt-4">
+      <section class="main-section">
+        <table>
+          <tr>
+            <td>
+              <div> 09 de Junio, 2022 </div>
+              <div> Ferropolis </div>
+              <div> Gräfenhainichen, Alemania </div>
+            </td>
+            <td>
+              <span>
+                <a class="boton"
+                  href="https://www.songkick.com/festivals/1556-melt/id/40182516-melt-festival-2022?utm_source=53762&utm_medium=partner"
+                  target="_blank">
+                  Tickets
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div> 10 de Junio, 2022 </div>
+              <div> Kirtlington Park </div>
+              <div> Kidlington, Reino Unido </div>
+            </td>
+            <td>
+              <span>
+                <a class="boton"
+                  href="https://www.songkick.com/festivals/2925624-kite/id/40139178-kite-festival-2022?utm_source=53762&utm_medium=partner"
+                  target="_blank">
+                  Tickets
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div> 11 de Junio, 2022 </div>
+              <div> Heaton Park </div>
+              <div> Manchester, Reino Unido </div>
+            </td>
+            <td>
+              <span>
+                <a class="boton"
+                  href="https://www.songkick.com/festivals/346-parklife/id/40196308-parklife-festival-2022?utm_source=53762&utm_medium=partner"
+                  target="_blank">
+                  Tickets
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div> 01 de Julio, 2022 </div>
+              <div> Glynde Place </div>
+              <div> Lewes, Reino Unido</div>
+            </td>
+            <td>
+              <span>
+                <a class="boton"
+                  href="https://www.songkick.com/festivals/651779-love-supreme/id/40127484-love-supreme-festival-2022?utm_source=53762&utm_medium=partner"
+                  target="_blank">
+                  Tickets
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div> 06 de Julio, 2022 </div>
+              <div> IFEMA Feria de Madrid </div>
+              <div> Madrid, España </div>
+            </td>
+            <td>
+              <span>
+                <a class="boton"
+                  href="https://www.songkick.com/festivals/1481913-mad-cool/id/39887117-mad-cool-festival-2022?utm_source=53762&utm_medium=partner"
+                  target="_blank">
+                  Tickets
+                </a>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
   </main>
 
   <footer>
