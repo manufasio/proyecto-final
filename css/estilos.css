@@ -15,72 +15,42 @@
 @font-face {
     font-family: bookman;
     src: url(../assets/fonts/BookmanJFPro-Regular.ttf);
-
 }
-
+html {
+        width: 100%;
+        height: 100vh;
+}
+        
 header {
     background-color: #353535;
-    height: 100%;
 }
 
 h1 {
-    font-size: 130px;
+    font-size: 120px;
     color: #e6ba46;
     text-align: center;
     font-family: regular;
-    letter-spacing: -9px;
-    padding: 1vh;
-
+    letter-spacing: -7px;
 }
 
-.barras {
-    color: #e6ba46;
-    background: none;
-    border: none;
-    font-size: 40px;
-    padding: 7px 20px;
-    float: right;
-    visibility: hidden;
-
+@media (max-width: 768px) {
+    h1 {
+        font-size: 100px;
+    }
 }
-
-nav {
-    background-color: #232323;
-    text-align: center;
+.navbar{
+    background-color: #232323 
+    
 }
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-}
-
-.menu_item {
-    font-size: 17px;
-    list-style-type: none;
+.nav-link{
     font-family: bookman;
-    padding-inline-start: 4vw;
-    background-color: #232323;
-
-}
-
-.menu_link {
-    text-decoration: none;
     color: #e6ba46;
-    padding: 8px 12px;
     border-radius: 5px;
-
 }
 
-.menu_link:hover {
+.nav_link:hover {
     background-color: #353535;
     transition: .5s;
-}
-
-body {
-    position: relative;
-    min-height: 100%;
 }
 
 .main-general {
@@ -90,6 +60,7 @@ body {
 footer {
     background-color: #353535;
     height: 6vh;
+    bottom: 0;
 }
 
 .redes {
@@ -98,65 +69,14 @@ footer {
     top: 1vh;
 }
 
- @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color: #353535;
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-    }
-} 
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 100px;
-    }
-}
-@media (max-width: 768px) {
-    .barras {
-        visibility: visible;
-    }
-}
-
-
-
 /* home */
-.wrapper {
-    display: grid;
-    grid-template-areas:
-        "home_header"
-        "tom_video"
-        "bio"
-        "footer_home";
-    grid-template-rows: 166px 1fr 1fr 60px;
-    width: 100%;
-    height: 100vh;
-}
-
-.home_header {
-    grid-area: home_header;
-}
-
-.tom_video {
-    grid-area: tom_video;
-}
 
 .publicidad {
-    grid-area: publicidad;
     background-color: #e6ba46;
     background: linear-gradient(180deg, #e6ba46, #f3ebd8);
-    visibility: hidden;
-   
 }
 
 .bio {
-    grid-area: bio;
-    font-family: bookman;
-    font-size: 80px;
     background: linear-gradient(0deg, #f3ebd8, #e6ba46);
     display: flex;
     align-items: center;
@@ -164,27 +84,12 @@ footer {
     height: 100vh;
 }
 .img-music{
-    width: 700px;
-    height: 500px;
+    width: auto;
+    height: 300px;
     
 }
 
-.footer_home {
-    grid-area: footer_home;
-}
-
-@media screen and (min-width:992px) {
-
-    .wrapper {
-        display: grid;
-        grid-template-areas:
-            "home_header home_header"
-            "tom_video tom_video"
-            "bio publicidad"
-            "footer_home footer_home";
-        grid-template-columns: auto 170px;
-    }
-
+@media screen and (min-width:768px) {
     .publicidad {
         visibility: visible;
         display: flex;
@@ -194,13 +99,12 @@ footer {
     .logo-marcas{
         width: 150px;
         height: 60px;
+      
     }
-   
-}
-@media (max-width: 768px) {
-    .bio{
-        font-size: 50px;
-    }    
+    .img-music{
+        width: 700;
+        height: 500px;
+    }
 }
 
 video {
@@ -224,40 +128,10 @@ article.pie {
 
 /* discografia  */
 
-.disc_wrapper {
-    display: grid;
-    grid-template-areas: 
-    "disc_header"
-    "main-disc"
-    "footer_disc";
-    grid-template-rows: 166px 1fr 60px;
-    width: 100%;
-    height: 100vh;
-}
-.disc_header {
-    grid-area: disc_header;
-}
 
 .main-disc {
-    grid-area: main-disc;
     background-color: #f3ebd8;
-    display: flex;
-    justify-content: center;
 }
-.footer_disc{
-    grid-area: footer_disc;
-}
-.discos {
-    width: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 7vh;
-    padding-bottom: 3vh;
-
-}
-
 .disco {
     padding-bottom: 3vh;
     font-family: bookman;
@@ -271,38 +145,19 @@ article.pie {
 .nombre {
     font-size: larger;
     font-style: italic;
-    text-align: center;
 }
 
 .genero {
     font-size: small;
-    text-align: center;
-}
+} 
 
 .año {
     font-size: smaller;
-    text-align: center;
-}
-
-.plataformas {
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .discos {
-        flex-direction: column;
-        align-items: center;
-    }
-
 }
 
 /* tour */
-.main-general {
+ .main-general {
     background-color: #f3ebd8;
-}
-
-.main-section {
-    padding: 5vh;
 }
 
 table {
@@ -329,41 +184,18 @@ td {
 .boton:hover {
     background-color: #f3ebd8;
     transition: .5s;
-}
+} 
 
 /* merch */
 
-.tienda {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+ .main-general {
     font-family: bookman;
-}
-
-.articulos {
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-}
-
-.articulo {
-    padding: 10px;
-    text-align: center;
 }
 
 /* contacto */
 
-.formulario {
-    width: 600px;
-    margin: 0 auto;
-    font-family: bookman;
-    padding: 20px;
-
-}
-
-.campo {
-    padding: 10px;
+.btn {
+    background-color: #353535;
+    color: #e6ba46;
+    border: #353535;
 }
