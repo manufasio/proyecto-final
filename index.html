@@ -5,96 +5,93 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/estilos.css">
    <script src="https://kit.fontawesome.com/4f57ab1524.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
    <title> Tom Misch </title>
 </head>
 
 <body>
-   <div class="wrapper">
-      <header class="home_header">
-         <h1> Tom Misch </h1>
-         <button class="barras">
-            <i class="fas fa-bars "></i>
-         </button>
-         <nav class="home_nav">
-            <!-- Lista de menu con links -->
-            <ul class="menu">
-               <li class="menu_item">
-                  <a class="menu_link" href="./index.html"> Home </a>
-               </li>
-               <li class="menu_item">
-                  <a class="menu_link" href="./discografia.html"> Discografía </a>
-               </li>
-               <li class="menu_item">
-                  <a class="menu_link" href="./tour.html"> Tour </a>
-               </li>
-               <li class="menu_item">
-                  <a class="menu_link" href="./merch.html"> Merch </a>
-               </li>
-               <li class="menu_item">
-                  <a class="menu_link" href="./contacto.html"> Contacto </a>
-               </li>
-            </ul>
-         </nav>
-      </header>
+   <header>
+      <h1> Tom Misch </h1>
+      <nav class="navbar navbar-expand-md navbar-dark">
+         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show justify-content-evenly" id="navbarNavAltMarkup">
+               <div class="navbar-nav">
+                  <a class="nav-link active" style="color: #e6ba46; padding-inline-start: 5vh" aria-current="page"
+                     href="index.html">Home</a>
+                  <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh;"
+                     href="discografia.html">Discografía</a>
+                  <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="tour.html">Tour</a>
+                  <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="merch.html">Merch</a>
+                  <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh"
+                     href="contacto.html">Contacto</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
 
-      <section class="tom_video">
-         <video src="./assets/img/videotom.mp4" alt="Video Introductorio" autoplay muted loop>
-         </video>
-         <a class="video_link" href="https://www.youtube.com/watch?v=ilNEqmfUyzI" target="_blank">
-            <!-- <p>  Ver 
+   <section class="tom_video col-12 w-100% h-100%">
+      <video src="./assets/img/videotom.mp4" alt="Video Introductorio" autoplay muted loop>
+      </video>
+      <a class="video_link" href="https://www.youtube.com/watch?v=ilNEqmfUyzI" target="_blank">
+         <!-- <p>  Ver 
                "It Runs Through Me" 
                 en vivo para Colors. </p> -->
-         </a>
-      </section>
-
-      <section class="bio">
-         <span class="music" data-aos="fade-left" data-aos-duration="5000" data-aos-offset="200">
-            <a href="https://www.youtube.com/watch?v=x30wgUCt72k&list=PL2wXweDr-uPgsFJ2e8MO8CMGxUXLJtoj_"
-               class="link-music" target="_blank"> <img class="img-music" src="./assets/img/bio.png" alt=""> </a>
-         </span>
-      </section>
-
-      <aside class="publicidad">
-         <span class="marcas" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
-            <a href="https://www.awal.com/" class="link-marcas" target="_blank"> <img class="logo-marcas"
-                  src="./assets/img/AWAL.png" alt=""> </a>
-         </span>
-         <span class="marcas" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400">
-            <a href="https://www.bluenote.com/" class="link-marcas" target="_blank"> <img class="logo-marcas"
-                  src="./assets/img/bluenote.png" alt=""> </a>
-         </span>
-         <span class="marcas" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400">
-            <a href="https://www.kobaltmusic.com/" class="link-marcas" target="_blank"> <img class="logo-marcas"
-                  src="./assets/img/K.png" alt=""> </a>
-         </span>
-      </aside>
-
-
-      <footer class="footer_home">
-         <span class="redes"> <a href="https://instagram.com/tommisch?igshid=YmMyMTA2M2Y=" target="_blank">
-               <i class="fa fa-instagram" style="color: #f3ebd8; font-size: 30px;"> </i></a>
-         </span>
-         <span class="redes"> <a href="https://twitter.com/TomMisch" target="_blank">
-               <i class="fa fa-twitter" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
-         </span>
-         <span class="redes"> <a href="https://www.facebook.com/TomMisch" target="_blank">
-               <i class="fa fa-facebook" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
-         </span>
-         <span class="redes"> <a
-               href="   https://open.spotify.com/artist/1uiEZYehlNivdK3iQyAbye?si=iruMuz21SCCIgHs70yXj9A"
-               target="_blank">
-               <i class="fa fa-spotify" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
-         </span>
-         <span class="redes"> <a href="https://www.youtube.com/channel/UCKXs11Oj1codrEy33D6XgkQ" target="_blank">
-               <i class="fa fa-youtube" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
-         </span>
-      </footer>
-   </div>
+      </a>
+   </section>
+    
+   <div class="row"> 
+   <section class="bio col-lg-10 col-12 p-0 m-0">
+      <span class="music" data-aos="fade-left" data-aos-duration="5000" data-aos-offset="200">
+         <a href="https://www.youtube.com/watch?v=x30wgUCt72k&list=PL2wXweDr-uPgsFJ2e8MO8CMGxUXLJtoj_"
+            class="link-music" target="_blank"> <img class="img-music" src="./assets/img/bio.png" alt=""> </a>
+      </span>
+   </section>
    
+
+
+   <aside class="publicidad col-lg-2 col-12 " style="padding:0 ;">
+      <span class="marcas" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300">
+         <a href="https://www.awal.com/" class="link-marcas" target="_blank"> <img class="logo-marcas"
+               src="./assets/img/AWAL.png" alt=""> </a>
+      </span>
+      <span class="marcas" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400">
+         <a href="https://www.bluenote.com/" class="link-marcas" target="_blank"> <img class="logo-marcas"
+               src="./assets/img/bluenote.png" alt=""> </a>
+      </span>
+      <span class="marcas" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400">
+         <a href="https://www.kobaltmusic.com/" class="link-marcas" target="_blank"> <img class="logo-marcas"
+               src="./assets/img/K.png" alt=""> </a>
+      </span>
+   </aside>
+   </div>
+
+   <footer class="footer_home">
+      <span class="redes"> <a href="https://instagram.com/tommisch?igshid=YmMyMTA2M2Y=" target="_blank">
+            <i class="fa fa-instagram" style="color: #f3ebd8; font-size: 30px;"> </i></a>
+      </span>
+      <span class="redes"> <a href="https://twitter.com/TomMisch" target="_blank">
+            <i class="fa fa-twitter" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
+      </span>
+      <span class="redes"> <a href="https://www.facebook.com/TomMisch" target="_blank">
+            <i class="fa fa-facebook" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
+      </span>
+      <span class="redes"> <a href="   https://open.spotify.com/artist/1uiEZYehlNivdK3iQyAbye?si=iruMuz21SCCIgHs70yXj9A"
+            target="_blank">
+            <i class="fa fa-spotify" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
+      </span>
+      <span class="redes"> <a href="https://www.youtube.com/channel/UCKXs11Oj1codrEy33D6XgkQ" target="_blank">
+            <i class="fa fa-youtube" style="color: #f3ebd8; font-size: 30px;"> </i> </a>
+      </span>
+   </footer>
+   </div>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>
       AOS.init();
