@@ -5,115 +5,100 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://kit.fontawesome.com/4f57ab1524.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
   <title> Tom Misch </title>
 </head>
 
 <body>
-  <header id="top">
+  <header>
     <h1> Tom Misch </h1>
-    <nav>
-      <!-- Lista de menu con links -->
-      <ul class="menu">
-        <li class="menu_item">
-          <a class="menu_link" href="./index.html"> Home </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./discografia.html"> Discografía </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./tour.html"> Tour </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./merch.html"> Merch </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./contacto.html"> Contacto </a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show justify-content-evenly" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" style="color: #e6ba46; padding-inline-start: 5vh" aria-current="page"
+              href="index.html">Home</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh;"
+              href="discografia.html">Discografía</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="tour.html">Tour</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="merch.html">Merch</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
-  <main class="main-general">
-    <section class="tienda">
-      <form class="formu-tienda" action="forms.html" method="post" enctype="application/x-www-form-urlencoded">
-        <ul class="articulos">
-          <li class="articulo">
-            <img src="./assets/img/remera.webp" alt="remera" width="180" height="200">
-            <div> Remera "Real Good Shit"</div>
-            <div> <strong> $5000 </strong> </div>
-            <div>
-              <label for="talle">Talle</label>
-              <select name="talle">
-                <option value="0" selected>Seleccione</option>
-                <option value="XL">Extra Large</option>
-                <option value="L">Large</option>
-                <option value="M">Medium</option>
-                <option value="S">Small</option>
-              </select>
-            </div>
-            <div>
-              <label for="unidades"> Unidades </label>
-              <select name="unidades">
-                <option value="0" selected>Seleccione</option>
-                <option value="4"> 4 </option>
-                <option value="3"> 3 </option>
-                <option value="2"> 2 </option>
-                <option value="1"> 1 </option>
-              </select>
-            </div>
 
-          </li>
-          <li class="articulo">
-            <img src="./assets/img/piluso.jpeg" alt="piluso" width="180" height="200">
-            <div> Piluso "Real Good Shit" </div>
-            <div> <strong> $3000 </strong> </div>
-            <div>
-              <label for="talle">Talle</label>
-              <select name="talle">
-                <option value="0" selected>Seleccione</option>
-                <option value="XL">Extra Large</option>
-                <option value="L">Large</option>
-                <option value="M">Medium</option>
-                <option value="S">Small</option>
-              </select>
-            </div>
-            <div>
-              <label for="unidades"> Unidades </label>
-              <select name="unidades">
-                <option value="0" selected>Seleccione</option>
-                <option value="4"> 4 </option>
-                <option value="3"> 3 </option>
-                <option value="2"> 2 </option>
-                <option value="1"> 1 </option>
-              </select>
-            </div>
+  <main class="main-general row justify-content-evenly container-fluid p-2 m-0">
 
-          </li>
-          <li class="articulo">
-            <img src="./assets/img/Vinilo1.png" alt="vinilo" width="400" height="210">
-            <div> Vinilo "Quarentine Sessions" </div>
-            <div> <strong> $8000 </strong> </div>
-            <div>
-              <label for="unidades"> Unidades </label>
-              <select name="unidades">
-                <option value="0" selected>Seleccione</option>
-                <option value="4"> 4 </option>
-                <option value="3"> 3 </option>
-                <option value="2"> 2 </option>
-                <option value="1"> 1 </option>
-              </select>
-            </div>
-          </li>
-        </ul>
-        <div>
-          <input type="submit" value="Comprar" />
-          <input type="reset" value="Vaciar Carrito" />
-        </div>
-      </form>
-    </section>
+    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+      <img src="./assets/img/Remeras.png" alt="remera" width="260" height="260">
+      <div>
+        <div> Remera "Real Good Shit"</div>
+        <div> $5000 </div>
+        <select class="form-select form-select-sm" aria-label="Small select">
+          <option selected="">Talle</option>
+          <option value="1">S</option>
+          <option value="2">M</option>
+          <option value="3">L</option>
+        </select>
+        <select class="form-select form-select-sm" aria-label="Small select">
+          <option selected="">Cantidad</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+      <img src="./assets/img/Vinilo1.png" alt="remera" width="300" height="160">
+      <div>
+        <div> Vinilo "Quarentine Sessions" </div>
+        <div> $8000 </div>
+        <select class="form-select form-select-sm" aria-label="Small select">
+          <option selected="">Cantidad</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+      <img src="./assets/img/Vinilo2.png" alt="remera" width="400" height="200">
+      <div>
+        <div> Vinilo "Beat Tape 1" </div>
+        <div> $8000 </div>
+        <select class="form-select form-select-sm" aria-label="Small select">
+          <option selected="">Cantidad</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+      <img src="./assets/img/Vinilo3.png" alt="remera" width="340" height="180">
+      <div>
+        <div> Vinilo "Geography" </div>
+        <div> $8000 </div>
+        <select class="form-select form-select-sm" aria-label="Small select">
+          <option selected="">Cantidad</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </div>
   </main>
   <footer>
     <span> <a class="redes" href="https://instagram.com/tommisch?igshid=YmMyMTA2M2Y=" target="_blank"> <i
@@ -128,7 +113,6 @@
     <span> <a class="redes" href="https://www.youtube.com/channel/UCKXs11Oj1codrEy33D6XgkQ" target="_blank"> <i
           class="fa fa-youtube" style="color:#f3ebd8; font-size: 30px;"> </i> </a> </span>
   </footer>
-
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
