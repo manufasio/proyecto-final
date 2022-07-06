@@ -5,74 +5,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://kit.fontawesome.com/4f57ab1524.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
   <title> Tom Misch </title>
 </head>
 
 <body>
-  <header id="top">
+  <header>
     <h1> Tom Misch </h1>
-    <nav>
-      <!-- Lista de menu con links -->
-      <ul class="menu">
-        <li class="menu_item">
-          <a class="menu_link" href="./index.html"> Home </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./discografia.html"> Discografía </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./tour.html"> Tour </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./merch.html"> Merch </a>
-        </li>
-        <li class="menu_item">
-          <a class="menu_link" href="./contacto.html"> Contacto </a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show justify-content-evenly" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" style="color: #e6ba46; padding-inline-start: 5vh" aria-current="page"
+              href="index.html">Home</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh;"
+              href="discografia.html">Discografía</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="tour.html">Tour</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="merch.html">Merch</a>
+            <a class="nav-link" style="color: #e6ba46; padding-inline-start: 5vh" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
+
   <main class="main-general">
-    <section>
-      <form class="formulario" action="forms.html" method="post" enctype="application/x-www-form-urlencoded">
-        <div class="campo">
-          <span>
-            <label for="nombre"> Nombre: </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" />
-          </span>
-          <span>
-            <label for="apellido"> Apellido: </label>
-            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" />
-          </span>
+    <form style="padding: 10vh 10vh;">
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form3Example1" class="form-control" />
+            <label class="form-label" for="form3Example1">Nombre</label>
+          </div>
         </div>
-        <div class="campo">
-          <label for="E-mail"> E-mail: </label>
-          <input type="text" name="E-mail" id="E-mail" placeholder="Ingresa tu E-mail" />
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form3Example2" class="form-control" />
+            <label class="form-label" for="form3Example2">Apellido</label>
+          </div>
         </div>
-        <div class="campo">
-          <label for="Fecha"> Fecha de Nacimiento: </label> </div>
-        <input type="date" id="Fecha" name="Fecha de Nacimiento" value="2022-01-01" min="1930-01-01" max="2022-05-25">
-        </div>
-        <div class="campo">
-          <label for="Suscribirse"> Suscribirse al Newsletter </label> <br />
-          <input type="radio" name="Suscribirse" id="Si" value="Si" />
-          <label for="Si"> Si </label><br>
-          <input type="radio" name="Suscribirse" id="No" value="No" />
-          <label for="No">No</label><br>
-        </div>
-        <div class="campo">
-          <label for="comentarios">Comentarios</label><br />
-          <textarea name="comentarios" id="comentarios" rows="5" maxlength="300" cols="40"></textarea>
-        </div>
-        <div class="campo">
-          <input type="submit" value="Enviar formulario" />
-          <input type="reset" value="Limpiar formulario" />
-        </div>
-      </form>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="email" id="form3Example3" class="form-control" />
+        <label class="form-label" for="form3Example3">Email</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="password" id="form3Example4" class="form-control" />
+        <label class="form-label" for="form3Example4">Contraseña</label>
+      </div>
+
+      <div class="form-check d-flex justify-content-center mb-4">
+        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+        <label class="form-check-label" for="form2Example33">
+          Subscribirme al newsletter
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mb-4">Registrarme</button>
+
+      <div class="text-center">
+        <p>o ingresar con:</p>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+    </form>
+
   </main>
   <footer>
     <span> <a class="redes" href="https://instagram.com/tommisch?igshid=YmMyMTA2M2Y=" target="_blank"> <i
