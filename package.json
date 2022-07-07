@@ -5,7 +5,7 @@
   "name": "proyecto-tom-coder",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "build:css": "node-sass --output-style compressed scss/styles.scss css/styles.css"
+    "build:css": "node-sass --output-style compressed scss/main.scss css/styles.css"
   },
   "version": "1.0.0",
   "devDependencies": {

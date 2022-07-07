@@ -1,0 +1,17 @@
+header {
+    background-color: #353535;
+}
+
+h1 {
+    font-size: 120px;
+    color: #e6ba46;
+    text-align: center;
+    font-family: regular;
+    letter-spacing: -7px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 100px;
+    }
+}
